@@ -496,8 +496,8 @@ function walk(){
 
 function test(){
 	if(last=="12345678."){
-//		last = "67834.512";
-		last = prompt("请你想到达的布局:如67834.512","67834.512");
+//		last = "67834.521";
+		last = prompt("请你想到达的布局:如67834.521","67834.521");
 		alert("调整最终状态成功:"+last);		
 	}
 	else{
