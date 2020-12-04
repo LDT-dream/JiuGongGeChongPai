@@ -101,6 +101,7 @@ function randomLayout(){
 		}
 		right_layout = judgeHaveSolution();
 	}while(!right_layout); //当产生的初始布局无解时，重新产生	
+
 }
 
 //初始化函数，页面加载的时候调用重置函数，重新开始
@@ -146,6 +147,8 @@ function reset(){
 	}
 	startAndStop();// 但是如果没开始就先停止的话就会有error
 	randomLayout(); // 所以在停止函数里写个有这个对象再停止√
+	last="12345678.";
+	alert("最终状态恢复为"+last); 
 }
 
 function judgeHaveSolution(){
@@ -493,7 +496,8 @@ function walk(){
 
 function test(){
 	if(last=="12345678."){
-		last = "67834.512";
+//		last = "67834.512";
+		last = prompt("请你想到达的布局:如67834.512","67834.512");
 		alert("调整最终状态成功:"+last);		
 	}
 	else{
